@@ -1,0 +1,166 @@
+/* Estilo para o cabeçalho */
+header {
+    width: 95vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp14209106.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;  
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo_proficao {
+    display: flex;
+    align-items: center;
+    height: 10vh; 
+    transition: transform 5s ease-in ;
+}
+
+#img_logo:hover{
+    transform: rotate(360deg);
+}
+
+
+#img_logo img {
+    width: 5vw; 
+    height: auto; 
+    border-radius: 30px;
+    box-shadow: -1px 35px 94px 14px rgba(63,74,117,0.56);
+}
+
+
+#logo_proficao h3 {
+    margin-left: 10px; 
+    color: white; 
+}
+
+
+#btns_paginas {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: #3f4f97; 
+    width: 8vw; 
+    height: 5vh; 
+    color: white; 
+    padding: 8px 16px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center; 
+    font-size: 20px;
+    margin: 4px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+    border: 1px solid transparent; 
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.btn:hover {
+    background-color: #3443c5; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-color: #3443c5; 
+}
+
+/* Estilos específicos para cada botão */
+#btn_home {
+    background-color: #3443c5; /* Cor específica para o botão Home */
+    display: flex;            /* Usar flexbox para alinhar itens */
+    align-items: center;     /* Alinhar ícones e texto verticalmente */
+}
+
+#btn_formacao {
+    background-color: #234a92; /* Cor específica para o botão Formação */
+    display: flex;            /* Usar flexbox para alinhar itens */
+    align-items: center;     /* Alinhar ícones e texto verticalmente */
+}
+
+#btn_projetos {
+    background-color: #292a6b; 
+    display: flex;            
+    align-items: center;    
+}
+
+.btn h6 {
+    margin-right: 20px;  
+}
+
+
+@media (max-width: 480px){
+    .btn h6 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para a seção */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Altura da visualização ajustada */
+    padding: 2rem;
+}
+
+/* Estilo para a imagem principal */
+#img_principal img {
+    width: 30vw; /* Aumentado para ocupar toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para as informações */
+#infos {
+    margin-left: 20px;
+}
+
+/* Estilo para o primeiro nome */
+#primeiro_nome {
+    color: aliceblue;
+    font-size: 6rem; /* Aumentado o tamanho da fonte para o primeiro nome */
+    margin: 0; /* Remove margem para evitar deslocamento indesejado */
+}
+
+/* Estilo para o segundo nome */
+#segundo_nome {
+    font-size: 5rem; /* Aumentado o tamanho da fonte para o segundo nome */
+    color: rgb(8, 57, 102); /* Cor do texto */
+}
+

@@ -1,0 +1,10 @@
+body {
+    background-image:"https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"; /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do body */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa durante o scroll */
+    margin: 0; /* Remove margens padrão do body */
+    height: 100vh; /* Faz o body ter altura total da viewport */
+}
+
