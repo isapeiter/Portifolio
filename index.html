@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./CSS/index.css">
     <script src="https://kit.fontawesome.com/8801dd93fc.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defter></script>
+    <link rel="stylesheet" href="./pages/formacao.html">
+    <link rel="stylesheet" href="./../Portifolio/pages/formacao.html">
 </head>
+
 <body>
     <header>
         <div id="logo_proficao">
             <div id="img_logo">
-            <img src="https://univali.br/noticias/SiteAssets/2016-02-29-agua-viva.jpg">
+            <img src="https://univali.br/noticias/SiteAssets/2016-02-29-agua-viva.jpg" onclick="window.location.href = ''">
             </div>
             <h3>Portifolio Isadora ♡</h3>
         </div> 
@@ -22,7 +26,7 @@
                 <h6>Home</h6>
                 <i class="fa-solid fa-house-user"></i>
             </button>
-            <button class="btn" id="btn_formacao">
+            <button class="btn" id="btn_formacao" onclick="window.location.href = './pages/formacao.html'">
                 <h6>Formação</h6>
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
@@ -43,8 +47,14 @@
         </div>
     </section>
     <footer>
+        <button id="insta">
+            <i class="fa-brands fa-instagram"></i>
+        </button>
+        <button id="face">
+            <i class="fa-brands fa-facebook"></i>
+        </button>
         <button id="btn_github">
-            <i></i>
+            <i class="fa-brands fa-github"></i>
         </button>
     </footer>
 </body>

@@ -1,4 +1,3 @@
-/* Estilo para o cabeçalho */
 header {
     width: 95vw;
     height: 10vh;
@@ -56,7 +55,7 @@ h1 {
 
 .btn {
     background-color: #3f4f97; 
-    width: 8vw; 
+    width: vw; 
     height: 5vh; 
     color: white; 
     padding: 8px 16px; 
@@ -109,58 +108,3 @@ h1 {
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilo para a seção */
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh; /* Altura da visualização ajustada */
-    padding: 2rem;
-}
-
-/* Estilo para a imagem principal */
-#img_principal img {
-    width: 30vw; /* Aumentado para ocupar toda a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilo para as informações */
-#infos {
-    margin-left: 20px;
-}
-
-/* Estilo para o primeiro nome */
-#primeiro_nome {
-    color: aliceblue;
-    font-size: 6rem; /* Aumentado o tamanho da fonte para o primeiro nome */
-    margin: 0; /* Remove margem para evitar deslocamento indesejado */
-}
-
-/* Estilo para o segundo nome */
-#segundo_nome {
-    font-size: 5rem; /* Aumentado o tamanho da fonte para o segundo nome */
-    color: rgb(8, 57, 102); /* Cor do texto */
-}
-
