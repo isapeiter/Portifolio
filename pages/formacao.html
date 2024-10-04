@@ -13,16 +13,16 @@
     <header>
         <div id="logo_proficao">
             <div id="img_logo">
-            <img src="https://univali.br/noticias/SiteAssets/2016-02-29-agua-viva.jpg">
+                <img src="https://univali.br/noticias/SiteAssets/2016-02-29-agua-viva.jpg" alt="Logo da Proficao">
             </div>
             <h3>Portifolio Isadora ♡</h3>
         </div> 
-        <div id="btns_paginas">
-            <button class="btn" id="btn_home" onclick="window.location.href = '../index.html'" >
+        <nav id="btns_paginas">
+            <button class="btn" id="btn_home" onclick="window.location.href='../index.html'">
                 <h6>Home</h6>
                 <i class="fa-solid fa-house-user"></i>
             </button>
-            <button class="btn" id="btn_formacao" onclick="window.location.href = './pages/formacao.html'">
+            <button class="btn" id="btn_formacao" onclick="window.location.href='./pages/formacao.html'">
                 <h6>Formação</h6>
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
@@ -30,13 +30,14 @@
                 <h6>Projetos</h6>
                 <i class="fa-solid fa-bars-progress"></i>
             </button>
-        </div>
+        </nav>
     </header>
 
     <h1 class="titulo">
-        <img src="../assets/img/pngtree-marine-life-spotlight-the-enigmatic-jellyfish-png-image_12997346-removebg-preview.png" alt="Pochacco" class="imagem-viva">
+        <img src="../assets/img/pngtree-marine-life-spotlight-the-enigmatic-jellyfish-png-image_12997346-removebg-preview.png" alt="Jellyfish" class="imagem-viva">
         Tela de Cartões
     </h1>
-    <div class="container"></div>    
+
+    <div class="container" id="cartoes"></div> <!-- Card container -->
 </body>
 </html>
