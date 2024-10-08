@@ -1,0 +1,16 @@
+@import url(../../header.css);
+@import url(../../body.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Gurajada&family=Lobster&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
+@import url(./menu.css);
+body{
+  margin:0 ;
+  padding:0 ;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h1{
+  font-family: "Gurajada", sans-serif;
+  
+}
