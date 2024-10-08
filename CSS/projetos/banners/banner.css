@@ -1,0 +1,54 @@
+#banners {
+    margin-top: 5vh;
+    width: 400vw;
+    height: 35vh;
+    display: inline;
+
+    left: 0;
+    top: 27vh;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+.banner {
+    width: 90vw;
+    height: 35vh;
+    margin: 0 5vw;
+    background-color: #f7d8ba; /* cor pastel de exemplo */
+    border: 0;
+    border-radius: 2vw;
+}
+#id-banner1 {
+    background-color: #f7d8ba; /* cor pastel laranja clara */
+}
+#id-banner2 {
+    background-color: #c9e7d6; /* cor pastel verde clara */
+}
+#id-banner3 {
+    background-color: #ffe6e6; /* cor pastel rosa clara */
+}
+#id-banner4 {
+    background-color: #d9e7f7; /* cor pastel azul clara */
+}
+#btns-banners {
+    width: 10vw;
+    height: 5vh;
+
+    position: absolute;
+    left: 45vw;
+    top: 62vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn-banner {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}

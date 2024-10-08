@@ -1,16 +1,86 @@
-@import url(../../header.css);
-@import url(../../body.css);
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Gurajada&family=Lobster&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
-@import url(./menu.css);
-body{
-  margin:0 ;
-  padding:0 ;
-  overflow-x: hidden;
-  margin: 0;
+body {
+  background-image:"https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"; /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a área do body */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa durante o scroll */
+  margin: 0; /* Remove margens padrão do body */
+  height: 100vh; /* Faz o body ter altura total da viewport */
 }
 
-h1{
-  font-family: "Gurajada", sans-serif;
+
+/* Estilo para a seção */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh; /* Altura da visualização ajustada */
+  padding: 2rem;
+}
+
+/* Estilo para a imagem principal */
+#img_principal img {
+  width: 30vw; /* Aumentado para ocupar toda a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para as informações */
+#infos {
+  margin-left: 20px;
+}
+
+#div-father {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#icon-menu {
+  width: 1vw;
+  height: 7vh;
+  position: absolute;
+  left: 49vw;
+  top: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   
+}
+#icon-menu div {
+  width: 5vw;
+  height: 2vh;
+  background-color:aliceblue ;
+
+  border: none;
+  border-radius: 5vw;
+  transition: all 0.3s ease-in-out;
+}
+
+ #icon-menu:hover #div1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3vh;
+}
+#icon-menu:hover #div2{
+  display: none;
+}
+#icon-menu:hover #div3{
+  transform: rotate(-45deg);
+  top: 3vh;
+  position: absolute; 
+}  */
+
+/* daqui para baixo é o menu*/
+
+#menu {
+  width: 100vw;
+  height: 20vh;
+
+  position: absolute;
+  top: 10vh;
+  left: 0vw;
+  z-index: -1;
+
+  background-color: #314B7C;
+  transition: all 0.3s ease-in-out;
 }
