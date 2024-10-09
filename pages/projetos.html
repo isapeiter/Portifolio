@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../CSS/projetos/banners/banner.css">
     <link rel="stylesheet" href="../CSS/projetos/menu/menu.css">
     <link rel="stylesheet" href="../CSS/header.css">
+    <script src="../controller/projetos/projetos.js" defter></script>
     <script src="../controller/banner.js" defer></script>
-    <script src="../controller/projetos/menu/menu.js"></script>
+    <script src="../controller/projetos/menu/menu.js" defer></script>
     <script src="https://kit.fontawesome.com/8801dd93fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,32 +37,32 @@
     </header>
     <h1>Projetos</h1>   
 
-    <div id="div-father">
-       <section>
-           <nav id="banners">
-               <div style="background-color: rgb(0, 119, 255);" class="banner" id="id-banner1"></div>
-               <div style="background-color: rgb(49, 63, 146);" class="banner" id="id-banner2"></div>
-               <div style="background-color: rgb(53, 50, 94);" class="banner" id="id-banner3"></div>
-               <div style="background-color: rgb(28, 59, 163);" class="banner" id="id-banner4"></div>
-           </nav>
-           <nav id="btns-banners">
-               <div class="btn-banner" onclick="trocarBanner(0)"></div>
-               <div class="btn-banner" onclick="trocarBanner(1)"></div>
-               <div class="btn-banner" onclick="trocarBanner(2)"></div>
-               <div class="btn-banner" onclick="trocarBanner(3)"></div>
-           </nav>
-       </section>
-       <section>
-           <nav id="icon-menu" onclick="trocarMenu()">
-               <div id="div1"></div>
-               <div id="div2"></div>
-               <div id="div3"></div>
-           </nav>
-           <nav id="menu">
+     <div id="div-father">
+        <section>
+            <nav id="banners">
+                <div style="background-color: rgb(255, 145, 0);" class="banner" id="id-banner1"></div>
+                <div style="background-color: rgb(255, 214, 127);" class="banner" id="id-banner2"></div>
+                <div style="background-color: rgb(255, 0, 140);" class="banner" id="id-banner3"></div>
+                <div style="background-color: rgb(255, 127, 176);" class="banner" id="id-banner4"></div>
+            </nav>
+            <nav id="btns-banners">
+                <div class="btn-banner" onclick="trocarBanner(0)"></div>
+                <div class="btn-banner" onclick="trocarBanner(1)"></div>
+                <div class="btn-banner" onclick="trocarBanner(2)"></div>
+                <div class="btn-banner" onclick="trocarBanner(3)"></div>
+            </nav>
+        </section>
+        <section>
+            <nav id="icon-menu" onclick="trocarMenu()">
+                <div id="div1"></div>
+                <div id="div2"></div>
+                <div id="div3"></div>
+            </nav>
+            <nav id="menu">
 
-           </nav>
-       </section>
-   </div>
+            </nav>
+        </section>
+    </div>
 
 </body>
 

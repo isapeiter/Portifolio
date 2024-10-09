@@ -1,5 +1,5 @@
 body {
-  background-image:"https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"; /* Substitua pelo caminho da sua imagem */
+  background-image: url("https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"); /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Faz a imagem cobrir toda a área do body */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
   background-position: center; /* Centraliza a imagem */
@@ -56,22 +56,6 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
- #icon-menu:hover #div1 {
-  transform: rotate(45deg);
-  position: absolute;
-  top: 3vh;
-}
-#icon-menu:hover #div2{
-  display: none;
-}
-#icon-menu:hover #div3{
-  transform: rotate(-45deg);
-  top: 3vh;
-  position: absolute; 
-}  */
-
-/* daqui para baixo é o menu*/
-
 #menu {
   width: 100vw;
   height: 20vh;
@@ -84,3 +68,17 @@ section {
   background-color: #314B7C;
   transition: all 0.3s ease-in-out;
 }
+
+#icon-menu:hover #div1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3vh;
+}
+#icon-menu:hover #div2{
+  display: none;
+}
+#icon-menu:hover #div3{
+  transform: rotate(-45deg);
+  top: 3vh;
+  position: absolute; 
+}  

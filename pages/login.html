@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="https://kit.fontawesome.com/8f497cd43a.js" crossorigin="anonymous"></script>
+    <script type="module" src="../controller/login.js"></script>
+    <title>Librae Conecta</title>
+</head>
+<body>
+    <header>
+        <div id="logo_proficao">
+            <div id="img_logo">
+                <img src="https://univali.br/noticias/SiteAssets/2016-02-29-agua-viva.jpg" onclick="window.location.href = './pages/login.html'">
+            </div>
+            <h3>Portifolio Isadora ♡</h3>
+        </div> 
+        <div id="btns_paginas">
+            <button class="btn" id="btn_home" onclick="window.location.href = '../index.html'">
+                <h6>Home</h6>
+                <i class="fa-solid fa-house-user"></i>
+            </button>
+            <button class="btn" id="btn_formacao" onclick="window.location.href = './formacao.html'">
+                <h6>Formação</h6>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </button>
+            <button class="btn" id="btn_projetos" onclick="window.location.href = './projetos.html'">
+                <h6>Projetos</h6>
+                <i class="fa-solid fa-bars-progress"></i>
+            </button>
+        </div>
+    </header>
+    <section class="login-section">
+        <div class="login-box">
+            <div class="login-image">
+                <img src="https://wallpapercave.com/wp/wp14209106.jpg" alt="Imagem de Login">
+            </div>
+            <div class="login-container">
+                <h1>Login</h1>
+                <div class="social-login">
+                    <button class="google-btn">
+                        <i class="fa-brands fa-google"></i>
+                        Continue com Google
+                    </button>
+                    <button class="facebook-btn">
+                        <i class="fa-brands fa-facebook"></i>
+                        Continue com Facebook
+                    </button>
+                </div>
+                <input type="email" placeholder="Email" class="input-field">
+                <input type="password" placeholder="Senha" class="input-field">
+                <input type="button" value="Entrar">
+                <div class="login-footer">Ainda não tem uma conta? <a href="./cadastro.html">Crie uma</a></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
