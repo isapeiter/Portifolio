@@ -18,7 +18,7 @@ body {
 }
 
 .imagem-viva {
-    width: 20vw; 
+    width: 15vw; 
     margin-right: 6vw; 
 }
 
@@ -30,8 +30,8 @@ body {
 
 .card {
     background-color: #ffffff; 
-    padding: 0.5vw; /* Reduzindo o padding */
-    height: 25vh; /* Reduzindo a altura do cartão */
+    padding: 0.5vw; 
+    height: 25vh; 
     text-align: center;
     border: 2px solid #000000; 
     border-radius: 10px; 
