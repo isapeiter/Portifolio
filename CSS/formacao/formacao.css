@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url(../header.css);
+@import url(../telaCadastro.css);
 
 body {
     font-family: "Abril Fatface", serif;

@@ -6,7 +6,7 @@
     <title>Tela de Cartões</title>
     <link rel="stylesheet" href="./../CSS/formacao/formacao.css">
     <link rel="stylesheet" href="../CSS/header.css">
-    <script src="./../controller/formacao/formacao.js" defer></script>
+    <script type="module" src="./../controller/formacao/formacao.js" defer></script>
     <script src="https://kit.fontawesome.com/8801dd93fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,6 +32,18 @@
             </button>
         </nav>
     </header>
+
+    <section id="telaCadastro">
+         <div id="inputs_cad">
+            <input id="nome" type="text" placeholder="nome">
+            <input id="valor" type="text" placeholder="valor">
+            <input id="link" type="text" placeholder="link da imagem">
+            <div id="buttons_telacad">
+                <button onclick="RecolheDados()">SALVAR</button>
+                <button onclick="EscondeTelaCad()">CANCELAR</button>
+            </div>
+         </div>
+    </section>
 
     <h1 class="titulo">
         <img src="../assets/img/pngtree-marine-life-spotlight-the-enigmatic-jellyfish-png-image_12997346-removebg-preview.png" alt="Jellyfish" class="imagem-viva">

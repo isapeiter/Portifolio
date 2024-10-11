@@ -1,10 +1,15 @@
-import {buscarCartoes} from "./criarCartoes.js";
-export function criarCartoes(cartoes) {
-    let sectionCartoes = document.getElementById('cartoes');
+import { buscarCartoes } from "../../services/buscacartao.js";
+import { excluirCartao } from "../../services/buscacartao.js";
 
+export async function criarCartoes() {
+    let sectionCartoes = document.getElementById('cartoes');
     sectionCartoes.innerHTML = ''; 
 
-    cartoes.forEach(cartao => {
+    const cartoes = await buscarCartoes();
+
+    console.log(cartoes);
+
+    cartoes.forEach((cartao, i) => {
         let divCartao = document.createElement('div');
         divCartao.className = 'card';
 
@@ -16,66 +21,41 @@ export function criarCartoes(cartoes) {
 
         let h1 = document.createElement('h1');
         h1.textContent = cartao.nome;
-        divCartao.appendChild(h1);
+        divCartao.appendChild(h1);  
 
         let h3 = document.createElement('h3');
         h3.textContent = cartao.valor;
         divCartao.appendChild(h3);
 
-        let p = document.createElement('p');
-        p.textContent = 'Sobre...';
-        divCartao.appendChild(p);
+        let button = document.createElement('button');
+        button.className = 'button_card';
+        button.textContent = 'EXCLUIR';
+        button.addEventListener('click', () => {
+            excluirCartao(i);
+        });
+        divCartao.appendChild(h1);
+        divCartao.appendChild(ImgTag);
+        divCartao.appendChild(h3);
+        divCartao.appendChild(button);
 
         sectionCartoes.appendChild(divCartao);
     });
 }
 
-document.addEventListener('DOMContentLoaded', buscarCartoes); 
+document.addEventListener('DOMContentLoaded', () => {
+    criarCartoes();
+});
 
-function showForm() {
+export function showForm() {
     const form = document.getElementById('cadastro-form');
     if (form) {
         form.style.display = 'flex';
     }
-}
-
-
-function addNewCard() {
-    const title = document.getElementById('card-title').value.trim();
-
-    if (!title) {
-      alert('Por favor, insira um título para o cartão.');
-      return;
-    }
-
-    const newCard = { nome: title, valor: 'R$ 0,00', imagem: 'https://via.placeholder.com/100x100.png?text=Novo+Cartão' }; 
-
-
-    fetch(baseUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newCard)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erro ao adicionar cartão');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Novo cartão adicionado:', data);
-        buscarCartoes(); 
-    })
-    .catch(error => {
-        console.error('Erro:', error);
+    let cartaoAdd = document.createElement('button');
+    cartaoAdd.className = 'cartao';
+    cartaoAdd.textContent = '+';
+    cartaoAdd.addEventListener('click', ()=>{
+        mostrarTelaCad();
     });
-
-    document.getElementById('card-title').value = '';
-    const form = document.getElementById('cadastro-form');
-    if (form) {
-        form.style.display = 'none';
-    }
+    sectionCartoes.appendChild(cartaoAdd);
 }
-
