@@ -7,53 +7,53 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Alinha verticalmente */
+    flex-direction: column; 
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Espaço entre logo e botões */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 10px 20px; /* Espaçamento ao redor do header */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
 }
 
 #header-content {
     display: flex;
-    align-items: center; /* Centraliza os itens do header */
+    align-items: center; 
 }
 
 #logo_proficao {
     display: flex;
-    align-items: center; /* Centraliza verticalmente logo e título */
-    margin-right: 20px; /* Espaço entre logo e botões */
+    align-items: center; 
+    margin-right: 20px; 
 }
 
 #img_logo img {
-    width: 50px; /* Defina a largura desejada para a imagem do logo */
-    height: auto; /* Mantém a proporção */
-    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
 #btns_paginas {
-    display: flex; /* Exibe os botões lado a lado */
-    justify-content: center; /* Centraliza os botões */
-    gap: 15px; /* Espaçamento entre os botões */
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
 }
 
 .login-section {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center; 
     width: 100vw;
-    flex-grow: 1; /* Permite que a seção de login preencha o espaço restante */
+    flex-grow: 1; 
 }
 
 .login-box {
     display: flex;
     width: 70vw;
-    max-width: 800px; /* Limita a largura máxima da caixa de login */
-    height: 80vh; /* Aumenta a altura da caixa de login */
-    background-color: rgba(80, 118, 135, 0.8); /* Cor de fundo com opacidade */
+    max-width: 800px; 
+    height: 80vh; 
+    background-color: rgba(80, 118, 135, 0.8); 
     border-radius: 2vh;
     box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -62,19 +62,19 @@ header {
 }
 
 .login-image {
-    flex: 1; /* Faz com que a imagem ocupe a mesma largura que o contêiner */
-    height: 100%; /* Faz com que a imagem ocupe toda a altura do contêiner */
-    position: relative; /* Permite que a imagem se posicione corretamente */
+    flex: 1; 
+    height: 100%;
+    position: relative; 
 }
 
 .login-image img {
     width: 100%;
-    height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
-    object-fit: cover; /* Cobre o espaço disponível sem distorção */
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .login-container {
-    flex: 1; /* Faz com que o contêiner de login ocupe a mesma largura */
+    flex: 1; 
     padding: 5vh;
     display: flex;
     flex-direction: column;
@@ -116,26 +116,26 @@ button, input[type="button"] {
     padding: 1.5vh;
     margin-top: 2vh;
     background-color: #1663c9; 
-    color: white; /* Cor do texto branco */
+    color: white; 
     border: none;
     border-radius: 1vh;
     cursor: pointer;
     font-size: 2vh;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 button:hover, input[type="button"]:hover {
-    background-color: #042b3d; /* Cor mais escura ao passar o mouse */
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    background-color: #042b3d; 
+    transform: scale(1.05); 
 }
 
 button:active, input[type="button"]:active {
-    background-color: #133e52; /* Cor ainda mais escura ao clicar */
-    transform: scale(0.98); /* Leve redução no tamanho ao clicar */
+    background-color: #133e52; 
+    transform: scale(0.98); 
 }
 
-/* Ajuste para espaçamento */
 .login-footer {
-    margin-top: 20px; /* Adiciona 20px de espaço entre o botão e o texto */
+    margin-top: 20px; 
     font-size: 1.8vh;
 }
+

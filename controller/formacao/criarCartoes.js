@@ -1,5 +1,4 @@
-import { buscarCartoes } from "../../services/buscacartao.js";
-import { excluirCartao } from "../../services/buscacartao.js";
+import { buscarCartoes, excluirCartao } from "../../services/buscacartao.js";
 
 export async function criarCartoes() {
     let sectionCartoes = document.getElementById('cartoes');
@@ -31,11 +30,8 @@ export async function criarCartoes() {
         button.className = 'button_card';
         button.textContent = 'EXCLUIR';
         button.addEventListener('click', () => {
-            excluirCartao(i);
+            excluirCartao(cartao.id); 
         });
-        divCartao.appendChild(h1);
-        divCartao.appendChild(ImgTag);
-        divCartao.appendChild(h3);
         divCartao.appendChild(button);
 
         sectionCartoes.appendChild(divCartao);
@@ -51,11 +47,13 @@ export function showForm() {
     if (form) {
         form.style.display = 'flex';
     }
+    
     let cartaoAdd = document.createElement('button');
     cartaoAdd.className = 'cartao';
     cartaoAdd.textContent = '+';
-    cartaoAdd.addEventListener('click', ()=>{
+    cartaoAdd.addEventListener('click', () => {
         mostrarTelaCad();
     });
     sectionCartoes.appendChild(cartaoAdd);
 }
+

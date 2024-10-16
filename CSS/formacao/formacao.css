@@ -58,8 +58,8 @@ body {
 }
 
 .imagem-cartao {
-    width: 8vw; /* Ajustando a largura da imagem */
-    height: 12vh; /* Ajustando a altura da imagem */
+    width: 8vw;
+    height: 12vh; 
     object-fit: cover;
     border-radius: 8px;
 }

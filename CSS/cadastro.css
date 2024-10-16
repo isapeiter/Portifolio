@@ -20,7 +20,7 @@ body::before {
 .form-container {
     position: relative;
     z-index: 2;
-    background-color: #133e52; /* Fundo semi-transparente */
+    background-color: #133e52; 
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ body::before {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Fundo leve para os inputs */
+    background-color: #f9f9f9; 
 }
 
 .form-container label {

@@ -79,17 +79,16 @@ h1 {
     border-color: #3443c5; 
 }
 
-/* Estilos específicos para cada botão */
 #btn_home {
-    background-color: #3443c5; /* Cor específica para o botão Home */
-    display: flex;            /* Usar flexbox para alinhar itens */
-    align-items: center;     /* Alinhar ícones e texto verticalmente */
+    background-color: #3443c5; 
+    display: flex;           
+    align-items: center;   
 }
 
 #btn_formacao {
-    background-color: #234a92; /* Cor específica para o botão Formação */
-    display: flex;            /* Usar flexbox para alinhar itens */
-    align-items: center;     /* Alinhar ícones e texto verticalmente */
+    background-color: #234a92; 
+    display: flex;          
+    align-items: center;    
 }
 
 #btn_projetos {

@@ -1,43 +1,38 @@
 body {
     background-image:"https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"; /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a área do body */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa durante o scroll */
-    margin: 0; /* Remove margens padrão do body */
-    height: 100vh; /* Faz o body ter altura total da viewport */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;  
+    margin: 0; 
+    height: 100vh; 
 }
 
 
-/* Estilo para a seção */
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh; /* Altura da visualização ajustada */
+    height: 90vh; 
     padding: 2rem;
 }
 
-/* Estilo para a imagem principal */
 #img_principal img {
-    width: 30vw; /* Aumentado para ocupar toda a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 30vw; 
+    height: auto; 
 }
 
-/* Estilo para as informações */
 #infos {
     margin-left: 20px;
 }
 
-/* Estilo para o primeiro nome */
 #primeiro_nome {
     color: aliceblue;
-    font-size: 6rem; /* Aumentado o tamanho da fonte para o primeiro nome */
-    margin: 0; /* Remove margem para evitar deslocamento indesejado */
+    font-size: 6rem; 
+    margin: 0; 
 }
 
-/* Estilo para o segundo nome */
 #segundo_nome {
-    font-size: 5rem; /* Aumentado o tamanho da fonte para o segundo nome */
-    color: rgb(8, 57, 102); /* Cor do texto */
+    font-size: 5rem; 
+    color: rgb(8, 57, 102); 
 }

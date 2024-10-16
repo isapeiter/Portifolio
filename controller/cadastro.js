@@ -1,21 +1,18 @@
-// Validação básica de CPF (apenas formatação correta, não autenticidade)
 function validarCPF(cpf) {
-    cpf = cpf.replace(/[^\d]+/g,''); // Remove caracteres não numéricos
+    cpf = cpf.replace(/[^\d]+/g,''); 
     if (cpf.length !== 11) {
         return false;
     }
-    return true; // Validação simples, sem verificação de dígitos
+    return true;
 }
 
-// Validação básica de telefone
 function validarTelefone(telefone) {
     const regexTelefone = /^\(\d{2}\) \d{5}-\d{4}$/;
     return regexTelefone.test(telefone);
 }
 
-// Função de submissão do formulário
 function validarFormulario(event) {
-    event.preventDefault(); // Evita o envio do formulário diretamente
+    event.preventDefault(); 
 
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
@@ -36,7 +33,6 @@ function validarFormulario(event) {
         return;
     }
 
-    // Exibir uma confirmação antes de enviar
     const confirmar = confirm(`
         Confirme seus dados:
         Nome: ${nome}
@@ -51,13 +47,10 @@ function validarFormulario(event) {
 
     if (confirmar) {
         alert("Cadastro realizado com sucesso!");
-        // Aqui você pode enviar o formulário (ou fazer uma requisição AJAX)
-        // Por enquanto, apenas resetaremos o formulário
         document.querySelector('form').reset();
     }
 }
 
-// Adiciona o evento de submissão ao carregar a página
 window.onload = function() {
     const form = document.querySelector('form');
     form.addEventListener('submit', validarFormulario);
