@@ -1,4 +1,4 @@
-import { cadastrarCartao } from "../../services/buscacartao.js";
+import { cadastrarCartao } from "../../services/cartoes_services.js";
 
 let telaCad = document.getElementById('telaCadastro');
 export function escodeTelaCad(){
@@ -13,7 +13,7 @@ export function recolheDados(){
        let valor = document.getElementById('valor'); 
        let link = document.getElementById('link'); 
 
-       cadastrarCatao(nome.value, valor.value, link.value);
+       cadastrarCartao(nome.value, valor.value, link.value);
        escodeTelaCad();
 
        nome.value = '';
