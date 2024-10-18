@@ -4,9 +4,9 @@
 
     position: fixed;
     top: 0;
-    left: -100vw;
+    right: -100vw;
 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(99, 96, 96, 0.356);
     
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     width: 30vw;
     height: 50vh;
 
-    background-color: white;
+    background-color: rgba(45, 80, 119, 0.938);;
     border-radius: 2vw;
 
     display: flex;
@@ -34,4 +34,55 @@
     width: 15vw;
     display: flex;
     justify-content: space-between;
+}
+
+#nome {
+    width: 20vw;
+    height: 5vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 8px;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#valor {
+    width: 20vw;
+    height: 5vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 8px;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#link {
+    width: 20vw;
+    height: 5vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 8px;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#btnr {
+    width: 6vw;
+    height: 6vh;
+    font-size: 2vh;
+    border-radius: 40px;
+    background-color: rgba(59, 93, 185, 0.698);
+    border: 0;
+}
+
+#btne {
+    width: 6vw;
+    height: 6vh;
+    font-size: 2vh;
+    border-radius: 40px;
+    background-color: rgba(59, 93, 185, 0.698);
+    border: 0;
 }

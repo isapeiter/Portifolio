@@ -5,11 +5,16 @@
 
 body {
     font-family: "Abril Fatface", serif;
-    margin: 0;
-    padding: 1vw;
+    margin: 2;
+    padding: 0vw;
     background-size: cover; 
     background-position: center;
 }
+
+header {
+   background-color: rgba(54, 97, 146, 0.781);;
+}
+
 
 .titulo {
     text-align: center;
@@ -33,10 +38,10 @@ body {
 .card {
     background-color: #ffffff; 
     padding: 0.5vw; 
-    width: 20vw;
-    height: 25vh; 
+    width: 18vw;
+    height: 28vh; 
     text-align: center;
-    border: 2px solid #000000; 
+    border: 0;
     border-radius: 10px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out; 
@@ -47,16 +52,16 @@ body {
 }
 
 .card:nth-child(odd) {
-    background-color: #637cc0; 
+    background-color: rgba(89, 112, 177, 0.698); 
 }
 
 .card:nth-child(even) {
-    background-color: #3b5db9; 
+    background-color: rgba(59, 93, 185, 0.698); 
 }
 
 .card h3 {
     margin: 0;
-    color: #ffffff; 
+    color: rgb(167, 193, 216); 
 }
 
 .card img {
@@ -64,4 +69,40 @@ body {
     height: 12vh; 
     object-fit: cover;
     border-radius: 8px;
+}
+
+.titulo {
+    color: rgba(54, 97, 146, 0.781);
+    font-size: 2.5vw;
+    font-family: "Abril Fatface", serif;
+}
+
+.button_card {
+    width: 5vw;
+    height: 5vh;
+    background-color: #384a83;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Abril Fatface", serif;
+    font-size: 2vh;
+}
+
+.button_cards {
+    width: 5vw;
+    height: 5vh;
+    background-color: #5774b1;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Abril Fatface", serif;
+    font-size: 2vh;
+}
+
+.cartao_add {
+    width: 20vw;
+    height: 28vh;
+    background-color: rgba(54, 97, 146, 0.781);
+    border: 0;
+    border-radius: 20px;
+    font-family: "Abril Fatface", serif;
+    font-size: 5vh;
 }

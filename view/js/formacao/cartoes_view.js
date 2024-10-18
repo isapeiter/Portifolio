@@ -26,7 +26,7 @@ export async function criarCartoes() {
         div.style.justifyContent = 'space-evenly'
 
         let button = document.createElement('button');
-        button.className = 'button_card';
+        button.className = 'button_cards';
         button.textContent = 'EXCLUIR';
         button.addEventListener('click', ()=>{
             excluirCartoes(i);
@@ -50,7 +50,7 @@ export async function criarCartoes() {
         sectionCartoes.appendChild(cartao);
     }
     let cartaoAdd = document.createElement('button');
-    cartaoAdd.className = 'cartao';
+    cartaoAdd.className = 'cartao_add';
     cartaoAdd.textContent = '+';
     cartaoAdd.addEventListener('click', ()=>{
         mostraTelaCad();
