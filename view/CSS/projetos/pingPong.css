@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+.rect {
+    width: 2vw;
+    height: 26vh;
+    background-color: #87a774;
+    position: absolute;
+}
+
+#raquete1 {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#raquete2 {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ball{
+    width: 2vw;
+    height: 2vw;
+    background-color: #444340;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
