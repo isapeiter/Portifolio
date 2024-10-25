@@ -1,10 +1,10 @@
 import { criarCartoes } from "./../view/js/formacao/cartoes_view.js";
 
-export async function buscarCartoes() {
+export async function buscarcartoes() {
     try {
         const response = await fetch('http://localhost:3000/cartoes');
         const data = await response.json();
-        const cartoes = data.cartoes;
+        const cartoes = data;
         return cartoes;
     }
     catch (e) {
@@ -12,7 +12,7 @@ export async function buscarCartoes() {
     }
 }
 
-export async function excluirCartoes(index) {
+export async function excluircartoes(index) {
     try {
         const response = await fetch('http://localhost:3000/cartoes', {
             method: 'DELETE',
@@ -41,7 +41,7 @@ export async function cadastrarCartao(nome, valor, link) {
                 imagem: link,
             }),
         });
-        criarCartoes();
+        criarcartoes();
     }
     catch (e) {
         console.log(e);
@@ -62,7 +62,7 @@ export async function atualizarCartao(id, nome, valor, imagem) {
                 id: id,
             }),
         });
-        criarCartoes();
+        criarcartoes();
     } catch (e) {
         console.log(e);
     }

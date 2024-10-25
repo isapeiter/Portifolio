@@ -1,5 +1,5 @@
-import { buscarCartoes } from "./../../../services/cartoes_services.js";
-import { excluirCartoes } from "./../../../services/cartoes_services.js";
+import { buscarcartoes } from "./../../../services/cartoes_services.js";
+import { excluircartoes } from "./../../../services/cartoes_services.js";
 import { mostraTelaCad } from "./../../../controller/formacao/telacad.js";
 import { mostraTelaAtt } from "./../../../controller/formacao/telaAtt.js";
 
@@ -8,7 +8,7 @@ export async function criarCartoes() {
     sectionCartoes.innerHTML = '';
 
     console.log('ate aqui tudo bem');
-    const cartoes = await buscarCartoes();
+    const cartoes = await buscarcartoes();
 
     for (let i = 0; i < cartoes.length; i++) {
         let cartao = document.createElement('div');
@@ -29,7 +29,7 @@ export async function criarCartoes() {
         button.className = 'button_cards';
         button.textContent = 'EXCLUIR';
         button.addEventListener('click', ()=>{
-            excluirCartoes(i);
+            excluircartoes(i);
         });
 
         let buttonAtt = document.createElement('button');
