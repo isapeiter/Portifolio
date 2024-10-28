@@ -41,7 +41,7 @@ export async function cadastrarCartao(nome, valor, link) {
                 imagem: link,
             }),
         });
-        criarcartoes();
+        criarCartoes();
     }
     catch (e) {
         console.log(e);
@@ -62,7 +62,7 @@ export async function atualizarCartao(id, nome, valor, imagem) {
                 id: id,
             }),
         });
-        criarcartoes();
+        criarCartoes();
     } catch (e) {
         console.log(e);
     }
