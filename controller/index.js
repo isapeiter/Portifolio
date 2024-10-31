@@ -5,8 +5,6 @@ let h1 = document.createElement('h1');
 h1.textContent = 'peiterisadora@gmail.com';
 
 footer.appendChild(h1).textContent;
-
- const footer = document.querySelector('footer');
  const buttons = document.querySelectorAll('footer button');
 
  footer.style.display = 'flex'; 
@@ -18,9 +16,4 @@ footer.appendChild(h1).textContent;
      button.style.padding = '15px 25px'; 
      button.style.marginLeft = '10px'; 
  });
-
-
-    document.getElementById('btn_formacao').addEventListener('click', function() {
-        ;
-    });
 
