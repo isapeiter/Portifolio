@@ -1,30 +1,26 @@
 body {
-  background-image: url("https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir toda a área do body */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  background-position: center; /* Centraliza a imagem */
-  background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa durante o scroll */
-  margin: 0; /* Remove margens padrão do body */
-  height: 100vh; /* Faz o body ter altura total da viewport */
+  background-image: url("https://s2.glbimg.com/TdAjQAogsbNEF1JS8lqnBTqOZYg=/620x430/e.glbimg.com/og/ed/f/original/2016/06/08/thinkstockphotos-491730810.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed; 
+  margin: 0; 
+  height: 100vh; 
 }
 
-
-/* Estilo para a seção */
 section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh; /* Altura da visualização ajustada */
+  height: 90vh; 
   padding: 2rem;
 }
 
-/* Estilo para a imagem principal */
 #img_principal img {
-  width: 30vw; /* Aumentado para ocupar toda a largura do container */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 30vw; 
+  height: auto; 
 }
 
-/* Estilo para as informações */
 #infos {
   margin-left: 20px;
 }

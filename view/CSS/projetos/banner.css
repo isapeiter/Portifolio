@@ -12,25 +12,51 @@
     flex-direction: row;
     transition: all 0.3s ease-in-out;
 }
-.banner {
+
+#id-banner1 {
     width: 90vw;
     height: 35vh;
     margin: 0 5vw;
-    background-color: #f7d8ba; /* cor pastel de exemplo */
+    background-image: url('https://i.ytimg.com/vi/yOWGWpNVJuI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCmicBbSHiFTXRJeBhv2G0FtyqvtQ');
+    background-size: cover;          
+    background-repeat: no-repeat;     
+    background-position: center;      
     border: 0;
     border-radius: 2vw;
 }
-#id-banner1 {
-    background-color: #f7d8ba; /* cor pastel laranja clara */
-}
+
 #id-banner2 {
-    background-color: #c9e7d6; /* cor pastel verde clara */
+    width: 90vw;
+    height: 35vh;
+    margin: 0 5vw;
+    background-image: url('https://st3.depositphotos.com/1783579/12643/i/450/depositphotos_126430458-stock-photo-dolphins-playing-in-the-pool.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+    border: 0;
+    border-radius: 2vw;
 }
 #id-banner3 {
-    background-color: #ffe6e6; /* cor pastel rosa clara */
+    width: 90vw;
+    height: 35vh;
+    margin: 0 5vw;
+    background-image: url('https://st4.depositphotos.com/4293711/27909/i/450/depositphotos_279095972-stock-photo-a-pair-of-stingrays-are.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+    border: 0;
+    border-radius: 2vw;
 }
 #id-banner4 {
-    background-color: #d9e7f7; /* cor pastel azul clara */
+    margin: 0 5vw;
+    background-image: url('https://img.freepik.com/fotos-premium/cavalos-marinhos-em-um-tanque-com-um-recife-de-coral-ao-fundo_337384-6887.jpg');
+    width: 90vw;
+    height: 35vh;
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border: 0;
+    border-radius: 2vw;
 }
 #btns-banners {
     width: 10vw;
