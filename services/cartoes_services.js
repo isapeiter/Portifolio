@@ -2,9 +2,9 @@ import { criarCartoes } from "./../view/js/formacao/cartoes_view.js";
 
 export async function buscarcartoes() {
     try {
-        const response = await fetch('http://localhost:3000/cartoes');
+        const response = await fetch('https://back-end-portifolio-g2xy.vercel.app/cartoes');
         const data = await response.json();
-        const cartoes = data;
+        const cartoes = data.cartoes;
         return cartoes;
     }
     catch (e) {
@@ -14,7 +14,7 @@ export async function buscarcartoes() {
 
 export async function excluircartoes(index) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-portifolio-g2xy.vercel.app/cartoes', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export async function excluircartoes(index) {
 
 export async function cadastrarCartao(nome, valor, link) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-portifolio-g2xy.vercel.app/cartoes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ export async function cadastrarCartao(nome, valor, link) {
 
 export async function atualizarCartao(id, nome, valor, imagem) {
     try {
-        const response = await fetch('http://localhost:3000/cartoes', {
+        const response = await fetch('https://back-end-portifolio-g2xy.vercel.app/cartoes', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
